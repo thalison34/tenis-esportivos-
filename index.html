@@ -3,69 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tênis Esportivo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tênis de Vôlei e Basquete</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            width: 45%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Tênis Esportivo</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Equipamentos</a></li>
-                <li><a href="#">Aulas</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Tênis de Vôlei e Basquete</h1>
 
-    <main>
-        <section id="destaque">
-            <h2>Destaque</h2>
-            <article>
-                <h3>Título da Notícia</h3>
-                <img src="imagem-noticia.jpg" alt="Imagem da Notícia">
-                <p>Resumo da notícia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leia mais</a>
-            </article>
-        </section>
+    <div class="container">
+        <div class="card">
+            <h2>Tênis de Vôlei</h2>
+            <img src="imagem-tenis-volei.jpg" alt="Tênis de Vôlei">
+            <p>
+                Os tênis de vôlei são projetados para oferecer amortecimento, estabilidade e tração,
+                auxiliando nos movimentos rápidos e saltos durante o jogo.
+            </p>
+            <table>
+                <tr>
+                    <th>Característica</th>
+                    <th>Benefício</th>
+                </tr>
+                <tr>
+                    <td>Amortecimento</td>
+                    <td>Absorve o impacto dos saltos, protegendo as articulações.</td>
+                </tr>
+                <tr>
+                    <td>Estabilidade</td>
+                    <td>Suporte lateral para movimentos rápidos e mudanças de direção.</td>
+                </tr>
+                <tr>
+                    <td>Tração</td>
+                    <td>Solado com borracha aderente para evitar escorregões.</td>
+                </tr>
+            </table>
+        </div>
 
-        <section id="noticias">
-            <h2>Notícias</h2>
-            <article>
-                <h3>Título da Notícia</h3>
-                <img src="imagem-noticia.jpg" alt="Imagem da Notícia">
-                <p>Resumo da notícia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leia mais</a>
-            </article>
-            </section>
+        <div class="card">
+            <h2>Tênis de Basquete</h2>
+            <img src="imagem-tenis-basquete.jpg" alt="Tênis de Basquete">
+            <p>
+                Os tênis de basquete são projetados para suportar os movimentos intensos do jogo,
+                como saltos, mudanças de direção e giros.
+            </p>
+            <table>
+                <tr>
+                    <th>Característica</th>
+                    <th>Benefício</th>
+                </tr>
+                <tr>
+                    <td>Suporte</td>
+                    <td>Proteção para tornozelos e maior segurança nos movimentos.</td>
+                </tr>
+                <tr>
+                    <td>Amortecimento</td>
+                    <td>Absorção de impacto para proteger os joelhos e articulações.</td>
+                </tr>
+                <tr>
+                    <td>Tração</td>
+                    <td>Sola com padrão multidirecional para movimentos explosivos.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-            <section id="equipamentos">
-                <h2>Equipamentos</h2>
-                <article>
-                    <h3>Nome do Equipamento</h3>
-                    <img src="imagem-equipamento.jpg" alt="Imagem do Equipamento">
-                    <p>Descrição do equipamento. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#">Saiba mais</a>
-                </article>
-            </section>
-
-            <section id="aulas">
-                <h2>Aulas</h2>
-                <article>
-                    <h3>Modalidade da Aula</h3>
-                    <img src="imagem-aula.jpg" alt="Imagem da Aula">
-                    <p>Descrição da aula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#">Saiba mais</a>
-                </article>
-            </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Tênis Esportivo</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
